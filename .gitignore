@@ -27,3 +27,4 @@ alignment_ace_spata/*/alignment_ace_spata/  # nested folder inside SPATA
 *.tmp
 *.zip
 
+ace-spata/EquCab3.0.fa
