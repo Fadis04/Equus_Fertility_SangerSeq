@@ -1,6 +1,6 @@
 🐴 Equus Fertility Sanger Sequencing Project
 ---
-
+---
 📌 Project Overview
 ---
 This repository contains sequencing data and analysis scripts for investigating fertility-associated genetic variants in Equus caballus (horses).
