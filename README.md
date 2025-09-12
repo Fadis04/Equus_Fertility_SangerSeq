@@ -1,36 +1,67 @@
-🐴 Equus Fertility Sanger Sequencing Project
----
----
-📌 Project Overview
----
-This repository contains sequencing data and analysis scripts for investigating fertility-associated genetic variants in Equus caballus (horses).
+🐴 EQUUS FERTILITY SANGER SEQUENCING PROJECT
 
-We focused on two candidate genes:
+Independent Bioinformatics Project – Targeted Gene Analysis in Horses
+Project Title: Identification of Fertility-Associated Variants in ACE and SPATA Genes
+
+<details> <summary>📌 PROJECT OVERVIEW</summary>
+
+This repository contains sequencing data and analysis pipelines for studying fertility-associated genetic variants in Equus caballus (horses).
+
+We targeted two candidate genes:
 
 ACE (Angiotensin-Converting Enzyme)
 
 SPATA (Spermatogenesis-Associated Gene)
 
-Samples were collected from horses with contrasting fertility phenotypes (low vs. high fertility) to identify potential variants influencing reproductive traits.
+Samples include horses with low fertility and high fertility to identify SNPs and indels potentially linked to reproductive performance.
 
 Note: Once the related research article is published, a link and citation will be added here.
 
-##📂 Repository Structure
----
-```
+</details> <details> <summary>🧬 KEY OBJECTIVES</summary>
+
+Identify candidate SNPs and indels in ACE and SPATA genes
+
+Compare variants between low- and high-fertility horses
+
+Provide a reproducible bioinformatics pipeline for Sanger sequencing analysis
+
+Build an open-access resource for horse genetics and reproductive genomics
+
+</details> <details> <summary>⚙️ WORKFLOW</summary>
+Raw Data Conversion
+
+Data Type: Sanger .ab1 chromatogram files
+
+Purpose: .ab1 files contain raw fluorescent traces representing nucleotide sequences.
+
+Converted to FASTQ format using ab1_to_fastq.py, preserving base call quality scores.
+
+Quality Control
+
+Reads are trimmed and filtered using Fastp (run_fastp_all.sh) to remove low-quality bases and adapters.
+
+Alignment
+
+Cleaned reads aligned to reference genome using Minimap2.
+
+Variant Calling
+
+SNPs and indels identified and stored in VCF_ACE/ and VCF_SPATA/ directories.
+
+</details> <details> <summary>📂 REPOSITORY STRUCTURE</summary>
 Equus_Fertility_SangerSeq/
 ├── VCF_ACE/                       # Variants identified in ACE gene
 ├── VCF_SPATA/                      # Variants identified in SPATA gene
 ├── Variant_calling_script.sh       # Complete pipeline for variant calling
-├── ab1_to_fastq.py                 # Converts Sanger .ab1 chromatograms to FASTQ
-├── run_fastp_all.sh                # Performs quality trimming and filtering using Fastp
+├── ab1_to_fastq.py                 # Convert Sanger .ab1 chromatograms to FASTQ
+├── run_fastp_all.sh                # Quality trimming and filtering
 ├── ace-spata/                      # Reference genome, alignments, and processed data
 │   ├── EquCab3.0.fa                # Reference genome
 │   ├── EquCab3.0.fa.fai
 │   ├── horse_ACE_real.fa
 │   ├── horse_ACE_real.fa.fai
 │   ├── horse_ACE_real.mmi          # Minimap2 index
-│   ├── sites.bed                   # Target regions for ACE and SPATA
+│   ├── sites.bed                   # Target regions
 │   ├── fastq_ace_f
 │   ├── fastq_ace_r
 │   ├── fastq_spata_f
@@ -53,59 +84,38 @@ Equus_Fertility_SangerSeq/
 │           ├── VCF_per_sample/
 │           ├── indels_all.csv
 │           └── indels_confirmed.csv
-```
----
-##⚙️ Workflow
----
-1️⃣ Raw Data Conversion
 
-Sanger sequencing produces .ab1 chromatogram files containing raw fluorescent signal traces.
-
-These are converted to FASTQ format using ab1_to_fastq.py, preserving base call quality scores.
-
-2️⃣ Quality Control
-
-Reads are trimmed and filtered using Fastp (run_fastp_all.sh) to remove low-quality bases and adapters.
-
-3️⃣ Alignment
-
-Cleaned reads are aligned to the reference genome using Minimap2.
-
-4️⃣ Variant Calling
-
-SNPs and indels are identified and stored separately for ACE (VCF_ACE/) and SPATA (VCF_SPATA/) genes.
-
-##🔬 Goals
----
-Compare variants between low- and high-fertility horse groups
-
-Identify candidate SNPs and indels in ACE and SPATA associated with fertility
-
-Provide a reproducible, open-access resource for horse genetics and reproductive genomics research
-
-##💻 Usage
----
+</details> <details> <summary>💻 USAGE</summary>
 # 1. Clone the repository
-```git clone https://github.com/YOUR_USERNAME/Equus_Fertility_SangerSeq.git```
-```cd Equus_Fertility_SangerSeq ```
+git clone https://github.com/YOUR_USERNAME/Equus_Fertility_SangerSeq.git
+cd Equus_Fertility_SangerSeq
 
 # 2. Convert .ab1 chromatogram files to FASTQ
-```python ab1_to_fastq.py -i raw_ab1_files/ -o fastq_output/```
+python ab1_to_fastq.py -i raw_ab1_files/ -o fastq_output/
 
 # 3. Perform quality trimming
-```bash run_fastp_all.sh```
+bash run_fastp_all.sh
 
 # 4. Align reads and call variants
- bash Variant_calling_script.sh ```
+bash Variant_calling_script.sh
 
-📌 Author & Contact
----
-Fadi Slimi
+</details> <details> <summary>🔬 EXPECTED OUTCOMES</summary>
 
-Industrial Biology Engineer (Bioinformatics)
+Identification of SNPs and indels potentially associated with horse fertility
 
-LinkedIn: linkedin.com/in/fadi-slimi
+Comparative variant analysis between low- and high-fertility groups
 
-Email: fadi.slimi@example.com
+High-quality, reproducible Sanger sequencing pipeline
 
-GitHub: github.com/Fadis04
+Open-access resource for equine reproductive genomics research
+
+</details> <details> <summary>👨‍💻 AUTHOR</summary>
+
+Fadi Slimi – Bioinformatics Specialist
+📧 Email: fadi.slimi@example.com
+
+🔗 LinkedIn: www.linkedin.com/in/fadi-slimi
+
+💻 GitHub: github.com/Fadis04
+
+</details>
