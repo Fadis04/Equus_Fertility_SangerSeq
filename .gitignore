@@ -1,0 +1,22 @@
+# Ignore large reference genomes
+*.fa
+*.fasta
+*.fai
+*.mmi
+
+# Ignore raw sequencing data
+*.ab1
+*.fastq
+*.fq
+
+# Ignore alignments
+*.bam
+*.bai
+*.sam
+
+# Ignore temporary / intermediate files
+*.log
+*.tmp
+fastp_clean/
+trimmed.files/
+fasta.files/
