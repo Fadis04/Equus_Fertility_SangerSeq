@@ -4,6 +4,7 @@ fastq_ace_r/
 fastq_spata_f/
 fastq_spata_r/
 fastp_clean/
+ace-spata/EquCab3.0.fa
 
 # Ignore alignment files
 alignment_ace_spata/
