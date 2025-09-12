@@ -1,6 +1,4 @@
-##🐴 Equus Fertility Sanger Sequencing Project
-
----
+🐴 Equus Fertility Sanger Sequencing Project
 
 
 ##📌 Project Overview
