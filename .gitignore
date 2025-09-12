@@ -1,21 +1,28 @@
-# Large genome/reference files
-*.fa
-*.fasta
-*.fai
-*.mmi
-
-# Raw sequencing data
-*.ab1
-*.fastq
-*.fq
-
-# Alignments
-*.bam
-*.bai
-*.sam
-
-# Intermediate folders
+# Raw and cleaned FASTQ
+fastq_ace_f/
+fastq_ace_r/
+fastq_spata_f/
+fastq_spata_r/
 fastp_clean/
-trimmed.files/
-fasta.files/
+
+# Ignore alignment BAM folders
+alignment_ace_spata/ACE/BAM/
+alignment_ace_spata/ACE/BAM_per_sample/
+alignment_ace_spata/SPATA/BAM/
+alignment_ace_spata/SPATA/BAM_per_sample/
+alignment_ace_spata/*/alignment_ace_spata/  # nested folder inside SPATA
+
+# Large binary/index files
+*.mmi
+*.fa.fai
+*.pac
+*.bwt
+*.ann
+*.sa
+*.amb
+
+# Optional temporary files
+*.log
+*.tmp
+*.zip
 

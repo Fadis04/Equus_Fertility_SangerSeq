@@ -1,0 +1,19 @@
+# Ignore FASTQ files
+fastq_ace_f/
+fastq_ace_r/
+fastq_spata_f/
+fastq_spata_r/
+fastp_clean/
+
+# Ignore alignment files
+alignment_ace_spata/
+trimmed.files/
+
+# Ignore indexes and large binaries if needed
+*.mmi
+*.fa.fai
+*.pac
+*.bwt
+*.ann
+*.sa
+*.amb
