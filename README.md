@@ -1,6 +1,6 @@
 🐴 EQUUS FERTILITY SANGER SEQUENCING PROJECT
 
-Independent Bioinformatics Project – Targeted Gene Analysis in Horses
+Bioinformatics Project – Targeted Gene Analysis in Horses
 Project Title: Identification of Fertility-Associated Variants in ACE and SPATA Genes
 
 <details> <summary>📌 PROJECT OVERVIEW</summary>
@@ -49,6 +49,8 @@ Variant Calling
 SNPs and indels identified and stored in VCF_ACE/ and VCF_SPATA/ directories.
 
 </details> <details> <summary>📂 REPOSITORY STRUCTURE</summary>
+
+```
 Equus_Fertility_SangerSeq/
 ├── VCF_ACE/                       # Variants identified in ACE gene
 ├── VCF_SPATA/                      # Variants identified in SPATA gene
@@ -83,11 +85,11 @@ Equus_Fertility_SangerSeq/
 │           ├── VCF_SPATA/
 │           ├── VCF_per_sample/
 │           ├── indels_all.csv
-│           └── indels_confirmed.csv
-
+│           └── indels_confirmed.csv 
+```
 </details> <details> <summary>💻 USAGE</summary>
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/Equus_Fertility_SangerSeq.git
+git clone https://github.com/Fadis04/Equus_Fertility_SangerSeq.git
 cd Equus_Fertility_SangerSeq
 
 # 2. Convert .ab1 chromatogram files to FASTQ
@@ -112,7 +114,7 @@ Open-access resource for equine reproductive genomics research
 </details> <details> <summary>👨‍💻 AUTHOR</summary>
 
 Fadi Slimi – Bioinformatics Specialist
-📧 Email: fadi.slimi@example.com
+📧 Email: fadi.slimi@insat.ucar.tn
 
 🔗 LinkedIn: www.linkedin.com/in/fadi-slimi
 
