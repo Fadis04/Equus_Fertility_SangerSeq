@@ -1,9 +1,9 @@
-🐴 Equus Fertility Sanger Sequencing Project
+##🐴 Equus Fertility Sanger Sequencing Project
+
+---
 
 
-
-
-📌 Project Overview
+##📌 Project Overview
 
 This repository contains sequencing data and analysis scripts for investigating fertility-associated genetic variants in Equus caballus (horses).
 
@@ -16,8 +16,9 @@ SPATA (Spermatogenesis-Associated Gene)
 Samples were collected from horses with contrasting fertility phenotypes (low vs. high fertility) to identify potential variants influencing reproductive traits.
 
 Note: Once the related research article is published, a link and citation will be added here.
-
-📂 Repository Structure
+---
+##📂 Repository Structure
+```
 Equus_Fertility_SangerSeq/
 ├── VCF_ACE/                       # Variants identified in ACE gene
 ├── VCF_SPATA/                      # Variants identified in SPATA gene
@@ -53,8 +54,9 @@ Equus_Fertility_SangerSeq/
 │           ├── VCF_per_sample/
 │           ├── indels_all.csv
 │           └── indels_confirmed.csv
-
-⚙️ Workflow
+```
+---
+##⚙️ Workflow
 1️⃣ Raw Data Conversion
 
 Sanger sequencing produces .ab1 chromatogram files containing raw fluorescent signal traces.
@@ -72,30 +74,30 @@ Cleaned reads are aligned to the reference genome using Minimap2.
 4️⃣ Variant Calling
 
 SNPs and indels are identified and stored separately for ACE (VCF_ACE/) and SPATA (VCF_SPATA/) genes.
-
-🔬 Goals
+---
+##🔬 Goals
 
 Compare variants between low- and high-fertility horse groups
 
 Identify candidate SNPs and indels in ACE and SPATA associated with fertility
 
 Provide a reproducible, open-access resource for horse genetics and reproductive genomics research
-
-💻 Usage
+---
+##💻 Usage
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/Equus_Fertility_SangerSeq.git
-cd Equus_Fertility_SangerSeq
+```git clone https://github.com/YOUR_USERNAME/Equus_Fertility_SangerSeq.git
+cd Equus_Fertility_SangerSeq```
 
 # 2. Convert .ab1 chromatogram files to FASTQ
-python ab1_to_fastq.py -i raw_ab1_files/ -o fastq_output/
+```python ab1_to_fastq.py -i raw_ab1_files/ -o fastq_output/```
 
 # 3. Perform quality trimming
-bash run_fastp_all.sh
+```bash run_fastp_all.sh```
 
 # 4. Align reads and call variants
-bash Variant_calling_script.sh
-
-📌 Author & Contact
+``` bash Variant_calling_script.sh ```
+---
+##📌 Author & Contact
 
 Fadi Slimi
 
