@@ -28,7 +28,8 @@ Provide a reproducible bioinformatics pipeline for Sanger sequencing analysis
 Build an open-access resource for horse genetics and reproductive genomics
 
 </details> <details> <summary>⚙️ WORKFLOW</summary>
-Raw Data Conversion
+  
+-Raw Data Conversion
 
 Data Type: Sanger .ab1 chromatogram files
 
@@ -36,15 +37,15 @@ Purpose: .ab1 files contain raw fluorescent traces representing nucleotide seque
 
 Converted to FASTQ format using ab1_to_fastq.py, preserving base call quality scores.
 
-Quality Control
+-Quality Control
 
 Reads are trimmed and filtered using Fastp (run_fastp_all.sh) to remove low-quality bases and adapters.
 
-Alignment
+-Alignment
 
 Cleaned reads aligned to reference genome using Minimap2.
 
-Variant Calling
+-Variant Calling
 
 SNPs and indels identified and stored in VCF_ACE/ and VCF_SPATA/ directories.
 
@@ -104,28 +105,30 @@ Equus_Fertility_SangerSeq/
 ```
 Description of files:
 
-ACE_high_fertility_variants_vep_ready.tsv and ACE_low_medium_fertility_variants_vep_ready.tsv
+* ACE_high_fertility_variants_vep_ready.tsv and ACE_low_medium_fertility_variants_vep_ready.tsv
 
 Contain SNPs identified in the ACE gene, separated into high fertility and low/medium fertility categories.
 
-SPATA_high_fertility_variants_vep_ready.tsv and SPATA_low_medium_fertility_variants_vep_ready.tsv
+* SPATA_high_fertility_variants_vep_ready.tsv and SPATA_low_medium_fertility_variants_vep_ready.tsv
 
 Contain SNPs identified in the SPATA1 gene, also separated by fertility category.
 
-Equss_Caballus_-_ACE_SPATA1_-_Feuille_1.pdf
+* Equss_Caballus_-_ACE_SPATA1_-_Feuille_1.pdf
 
 PDF report summarizing the SNP annotations for both genes, showing how variants are distributed across fertility categories.
 
-Fertility_Hourse.tsv
+* Fertility_Hourse.tsv
 
 Table showing each sample and its corresponding fertility characteristic.
 
 Scripts:
 
-create_tsv.sh: Generates .tsv files combining sample information with fertility categories.
+* create_tsv.sh: Generates .tsv files combining sample information with fertility categories.
 
-filter_and_group_variants_by_fertility.sh: Processes variant files to separate and group SNPs according to fertility levels.
+* filter_and_group_variants_by_fertility.sh: Processes variant files to separate and group SNPs according to fertility levels.
+* 
 </details> <details> <summary>💻 USAGE</summary>
+  
 # 1. Clone the repository
 git clone https://github.com/Fadis04/Equus_Fertility_SangerSeq.git
 cd Equus_Fertility_SangerSeq
