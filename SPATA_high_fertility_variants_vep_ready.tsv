@@ -1,0 +1,12 @@
+#CHROM	POS	ID	REF	ALT	INFO
+5	76147399	.	A	T	Samples=26Jvcf
+5	76147475	.	C	T	Samples=30Jvcf,52vcf
+5	76147486	.	T	A	Samples=26Jvcf
+5	76147495	.	T	G	Samples=26Jvcf
+5	76147551	.	C	T	Samples=30Jvcf,50.2
+5	76147569	.	C	G	Samples=26Jvcf,52vcf
+5	76147716	.	T	G	Samples=26Jvcf
+5	76147764	.	A	G	Samples=26Jvcf
+5	76147766	.	T	A	Samples=52vcf
+5	76147784	.	G	C	Samples=26Jvcf
+5	76147853	.	C	G	Samples=52vcf

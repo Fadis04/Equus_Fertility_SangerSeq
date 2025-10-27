@@ -1,0 +1,33 @@
+# Fertility_Horse.tsv
+gene	sample	fertility
+ACE	1d	bonne_fertilite
+ACE	3d	moyenne_fertilite
+ACE	4	bonne_fertilite
+ACE	5	moyenne_fertilite
+ACE	7	faible_fertilite
+ACE	9	bonne_fertilite
+ACE	10	bonne_fertilite
+ACE	11	faible_fertilite
+ACE	12	moyenne_fertilite
+ACE	13	moyenne_fertilite
+ACE	16	faible_fertilite
+ACE	26	moyenne_fertilite
+ACE	29	moyenne_fertilite
+ACE	M	faible_fertilite
+ACE	20	bonne_fertilite
+Spata1	30j	bonne_fertilite
+Spata1	8f	moyenne_fertilite
+Spata1	107f	faible_fertilite
+Spata1	33f	bonne_fertilite
+Spata1	27jf	moyenne_fertilite
+Spata1	25f	faible_fertilite
+Spata1	26jf	moyenne_fertilite
+Spata1	14jf	bonne_fertilite
+Spata1	10f	faible_fertilite
+Spata1	49f	moyenne_fertilite
+Spata1	21f	faible_fertilite
+Spata1	50f	bonne_fertilite
+Spata1	24jf	moyenne_fertilite
+Spata1	28f	faible_fertilite
+Spata1	52f	bonne_fertilite
+
