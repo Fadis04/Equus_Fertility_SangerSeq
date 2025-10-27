@@ -85,8 +85,46 @@ Equus_Fertility_SangerSeq/
 │           ├── VCF_SPATA/
 │           ├── VCF_per_sample/
 │           ├── indels_all.csv
-│           └── indels_confirmed.csv 
+│           └── indels_confirmed.csv
 ```
+Variant Annotation Files and Scripts – ACE & SPATA1
+
+The repository contains a set of files and scripts related to the annotation of variants (SNPs) in the ACE and SPATA1 genes, categorized according to fertility levels: low/medium and high. These files are part of the folder structure below:
+```
+Equus_Fertility_SangerSeq/
+├── ACE_high_fertility_variants_vep_ready.tsv
+├── ACE_low_medium_fertility_variants_vep_ready.tsv
+├── SPATA_high_fertility_variants_vep_ready.tsv
+├── SPATA_low_medium_fertility_variants_vep_ready.tsv
+├── Fertility_Hourse.tsv
+├── Equss_Caballus_-_ACE_SPATA1_-_Feuille_1.pdf
+├── create_tsv.sh
+├── filter_and_group_variants_by_fertility.sh
+
+```
+Description of files:
+
+ACE_high_fertility_variants_vep_ready.tsv and ACE_low_medium_fertility_variants_vep_ready.tsv
+
+Contain SNPs identified in the ACE gene, separated into high fertility and low/medium fertility categories.
+
+SPATA_high_fertility_variants_vep_ready.tsv and SPATA_low_medium_fertility_variants_vep_ready.tsv
+
+Contain SNPs identified in the SPATA1 gene, also separated by fertility category.
+
+Equss_Caballus_-_ACE_SPATA1_-_Feuille_1.pdf
+
+PDF report summarizing the SNP annotations for both genes, showing how variants are distributed across fertility categories.
+
+Fertility_Hourse.tsv
+
+Table showing each sample and its corresponding fertility characteristic.
+
+Scripts:
+
+create_tsv.sh: Generates .tsv files combining sample information with fertility categories.
+
+filter_and_group_variants_by_fertility.sh: Processes variant files to separate and group SNPs according to fertility levels.
 </details> <details> <summary>💻 USAGE</summary>
 # 1. Clone the repository
 git clone https://github.com/Fadis04/Equus_Fertility_SangerSeq.git
